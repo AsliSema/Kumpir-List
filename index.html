@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Kumpir List</h2>
+        <ul class="contents">
+            <li>Loading Kumpir...</li>
+        </ul>
+        <form class="add-items" action="">
+            <input type="text" name="text" placeholder="Add Items..." required>
+            <input type="submit" value="+Add Items">
+            <div class="other-buttons">
+                <input type="button" class="checked-all" value="Checked All">
+                <input type="button" class="unchecked-all" value="Unchecked All">
+                <input type="button" class="clear-all" value="Clear All">
+            </div>
+        </form>
+    </div>
+
+    <style>
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(205,229,196);
+            background: url("https://mutfaktaki.com/wp-content/uploads/2020/11/Evde-Kumpir-Nasil-Yapilir.jpeg") center no-repeat;
+            background-size: cover;
+        }
+
+        .wrapper {
+            padding: 25px;
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.05);
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.80);
+        }
+
+        .contents {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .contents li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 10px 0;
+            margin: 5px 0;
+        }
+
+        h2 {
+            justify-content: center;
+        }
+
+        .add-items {
+            margin-top: 50px;
+        }
+
+        .add-items input {
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .other-buttons{
+            display: flex;
+            flex-direction: column;
+        }
+        .other-buttons :first-child{
+            background-color: #39DB80;
+        }
+        .other-buttons :last-child{
+            background-color: #CA0B00;
+        }
+        .other-buttons :nth-child(2){
+            background-color: #05C3DD;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+
+</html>
